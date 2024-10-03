@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Forming form</title>
+        <style>
+            .firstform{
+                width: 30%;
+                text-align: center;
+                line-height: 2;
+            }
+            .firstform label{
+                color: orange;
+            }
+            .secondform{
+                background-color: lightyellow;
+                width: 40%;
+                line-height: 2;
+            }
+            .secondform label{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="firstform">
+            <div>
+                <h1 style="background-color: red; color: white; text-align: center;">Hobby</h1>
+                <form method="get" action="#">
+                    <label style="color:blue" for="name">Fullname</lable>
+                    <input type="text" id="name" name="yourname" placeholder="Enter name" required><br>
+                    <label style="color:blue" for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter email"><br>
+                    <label style="color:blue" for="sport">Hobby</label>
+                    <input type="checkbox" id="sport" name="hobby"><label for="sport">Sport</label>
+                    <input type="checkbox" id="music" name="hobby"><label for="music">Music</label>
+                    <input type="checkbox" id="book" name="hobby"><label for="book">Reading books</label><br>
+                    <input type="checkbox" id="web" name="hobby"><label for="web">Surfing web</label>
+                    <input type="checkbox" id="game" name="hobby"><label for="game">Playing games</label>
+                    <input type="checkbox" id="movie" name="hobby"><label for="movie">Movies</label><br>
+                    <input type="checkbox" id="vaction" name="hobby"><label for="vacation">Going on vaction</label><br>
+                    <input type="submit" value="Submit form">
+                    <input type="reset" value="Reset form">
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="secondform">
+            <h1 style="background-color: aquamarine; color:blue">Register student</h1>
+            <form method="get" action="#">
+                <label for="name">Fullname</lable>
+                <input type="text" id="name" name="yourname" placeholder="Enter name" required size="30"><br>
+                <label for="dob" size="20">Date of birth</label>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" name="gender" checked style="color:black">Male
+                <input type="radio" name="gender" style="color: black;">Female<br>
+                <label for="addr">Address</label>
+                <textarea rows="3" cols="30" id="addr" name="addr" placeholder="Enter address"></textarea><br>
+                <label for="class">Class</label>
+                <select name="class" aria-placeholder="--Choose class--">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter email" size="20"><br>
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone number" size="20"><br> 
+            </form>
+        </div>
+    </body>
+</html>
