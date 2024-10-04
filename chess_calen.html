@@ -151,9 +151,8 @@
             function createChessboard(board_size) {
                 var chessTable = document.createElement('table');
                 let alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-                n = board_size;
+                let n = board_size;
                 let cell_size = "width:" + (100/(n+2)) + "%;height:" + (100/(n+2)) + "%";
-                var cell = document.getElementsByClassName("cell");
 
                 ////////create number column////////
                 var numcol = document.createElement('tr');
