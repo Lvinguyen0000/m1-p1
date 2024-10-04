@@ -14,7 +14,7 @@
                 border-collapse: collapse;
             }
             th, td{
-                text-align: center; border: 1px solid black; border-collapse: collapse;
+                text-align: center; border: 1px solid black;
             }
             .statement{
                 width: 40%;
@@ -58,16 +58,18 @@
                 <input type="radio" name="frequency">Weekly<br>
                 <input type="radio" name="frequency">Monthly<br>
                 <input type="radio" name="frequency">Yearly<br>
-                <p>How much are you willing to pay for a new product?</p>
+                <p>How much are you willing to pay for the new product?</p>
                 <div>
-                    <label for="dollar">$</label>
-                    <div style="display: inline-block; line-height: 0.8;">
-                        <input type="text" id="dollar" name="indollar" style="display: block;" size="10">
-                        <p style="display: block; text-align: center;">Dollars</p>
+                    <div style="display: inline-block; line-height: 0.1;">
+                        <div style="display: block;">
+                            <label for="dollar">$</label>
+                            <input type="text" id="dollar" name="indollar" size="10">.
+                        </div>    
+                        <p style="display: block;">Dollars</p>
                     </div>
-                    <div style="display:inline-block; line-height: 0.8;">
+                    <div style="display:inline-block; line-height: 0.1;">
                         <input type="text" name="incent" style="display: block;" size="5">
-                        <p style="display: block; text-align: center;">Cents</p>
+                        <p style="display: block;">Cents</p>
                     </div>
                 </div>
                 <p>What features would you like to see in the new product?</p>
@@ -75,7 +77,7 @@
                 <p>Please rate your level of agreement with the following statements.</p>
                 <table>
                     <tr>
-                        <th class="statement"></th>
+                        <th class="statement" style="background-color: grey;"></th>
                         <th class="opinion">Strongly Disagree</th>
                         <th class="opinion">Disagree</th>
                         <th class="opinion">Agree</th>
